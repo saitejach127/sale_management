@@ -1,0 +1,25 @@
+{
+ "cards": [
+  {
+   "card": "Daily Sale Card"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Sum values",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-02-01 18:55:54.473598",
+ "dashboard_name": "Site Manager Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-02-01 19:00:01.789477",
+ "modified_by": "Administrator",
+ "module": "Sale Management",
+ "name": "Site Manager Dashboard",
+ "owner": "Administrator"
+}
