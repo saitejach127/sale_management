@@ -18,7 +18,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2023-01-29 19:26:58.218178",
+ "modified": "2023-02-05 13:56:06.278457",
  "modified_by": "Administrator",
  "module": "Daily Sales",
  "name": "sales-data-entry",
@@ -100,6 +100,19 @@
    "max_length": 0,
    "max_value": 0,
    "options": "Site Item",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 0,
+   "label": "Date",
+   "max_length": 0,
+   "max_value": 0,
    "read_only": 0,
    "reqd": 1,
    "show_in_filter": 0
