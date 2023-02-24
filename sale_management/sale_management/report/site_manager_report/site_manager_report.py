@@ -49,7 +49,6 @@ def get_cs_data(filters):
 		filters=conditions,
 		order_by='site_name desc'
 	)
-	print ("data is", data)
 	return data
 
 def get_conditions(filters):
@@ -75,7 +74,6 @@ def get_chart_data(data):
 			catering_site[str(d.get("date"))] += d.get("net_price")
 
 	labels = sorted(labels)
-	print(catering_site)
 	datasets = []
 	datasets.append({
 		'name': 'Net Value',
@@ -98,7 +96,6 @@ def get_report_summary(data, filters):
 
 	daily_sales = 0
 	date = str(filters.get("Date")) if (filters.get("Date") is not None) else datetime.now().strftime('%Y-%m-%d')
-	print(date, filters)
 	for entry in data:
 		if str(entry.get("date")) == date:
 			daily_sales += entry.get("net_price")
