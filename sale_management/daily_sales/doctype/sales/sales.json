@@ -21,6 +21,7 @@
   {
    "fieldname": "site_name",
    "fieldtype": "Link",
+   "ignore_user_permissions": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Site Name",
@@ -30,10 +31,11 @@
   {
    "fieldname": "items",
    "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
    "in_list_view": 1,
    "label": "Items",
-   "options": "Site Item",
-   "reqd": 1
+   "options": "Site Item"
   },
   {
    "fieldname": "quantity",
@@ -58,7 +60,6 @@
   {
    "fieldname": "dummy_items",
    "fieldtype": "Select",
-   "hidden": 1,
    "label": "dummy Items"
   },
   {
@@ -71,7 +72,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-25 00:47:19.660586",
+ "modified": "2023-02-25 22:32:37.990978",
  "modified_by": "Administrator",
  "module": "Daily Sales",
  "name": "Sales",
@@ -99,6 +100,7 @@
    "read": 1,
    "report": 1,
    "role": "Site Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   },
