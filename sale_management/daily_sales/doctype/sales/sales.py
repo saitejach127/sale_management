@@ -10,7 +10,6 @@ class Sales(Document):
 @frappe.whitelist()
 def getSiteItems(site_name):
 	fields = frappe.get_all('Site Item', filters={'catering_site_id': site_name})
-	print("field ar e", fields)
 	return fields
 
 @frappe.whitelist()
