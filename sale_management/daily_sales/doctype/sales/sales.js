@@ -3,6 +3,7 @@
 
 frappe.ui.form.on("Sales", {
 	refresh(frm) {
+        frm.set_df_property('items', 'hidden', true);
         frappe.call({
             method: 'sale_management.daily_sales.doctype.sales.sales.getUserCateringSite',
             freeze: true,
@@ -19,8 +20,8 @@ frappe.ui.form.on("Sales", {
                     freeze: true,
                     freeze_message: __('Loading Items... Please Wait'),
                     callback: (r) => {
-                        console.log(r.message.map((a) => (a.name1)));
-                        frm.set_df_property('dummy_items', 'options', r.message.map((a) => (a.name1)));
+                        console.log(r.message.map((a) => (a.name)));
+                        frm.set_df_property('dummy_items', 'options', r.message.map((a) => (a.name)));
                     }
                 })
                 }
@@ -30,7 +31,7 @@ frappe.ui.form.on("Sales", {
 	},
 
     dummy_items(frm) {
-        console.log("enter");
+        console.log("enter", frm.doc.dummy_items);
         frm.set_df_property('items', 'hidden', false);
         frm.set_value('items', frm.doc.dummy_items);
         frm.set_df_property('items', 'hidden', true);

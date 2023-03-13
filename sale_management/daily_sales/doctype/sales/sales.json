@@ -31,11 +31,11 @@
   {
    "fieldname": "items",
    "fieldtype": "Link",
-   "hidden": 1,
    "ignore_user_permissions": 1,
    "in_list_view": 1,
    "label": "Items",
-   "options": "Site Item"
+   "options": "Site Item",
+   "reqd": 1
   },
   {
    "fieldname": "quantity",
@@ -72,7 +72,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-25 22:32:37.990978",
+ "modified": "2023-03-13 21:36:34.943830",
  "modified_by": "Administrator",
  "module": "Daily Sales",
  "name": "Sales",
