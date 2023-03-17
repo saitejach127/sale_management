@@ -35,5 +35,18 @@ frappe.ui.form.on("Sales", {
         frm.set_df_property('items', 'hidden', false);
         frm.set_value('items', frm.doc.dummy_items);
         frm.set_df_property('items', 'hidden', true);
+    },
+
+    quantity(frm){
+        if(frm.doc.price){
+            frm.set_value('net_price', frm.doc.price * frm.doc.quantity);
+        }
+    },
+
+    price(frm){
+        if(frm.doc.quantity){
+            frm.set_value('net_price', frm.doc.quantity * frm.doc.price);
+        }
     }
+
 });

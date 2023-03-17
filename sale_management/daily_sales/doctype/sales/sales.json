@@ -10,12 +10,12 @@
  "engine": "InnoDB",
  "field_order": [
   "site_name",
+  "dummy_items",
+  "date",
   "items",
   "quantity",
   "price",
-  "net_price",
-  "dummy_items",
-  "date"
+  "net_price"
  ],
  "fields": [
   {
@@ -55,6 +55,7 @@
    "fieldname": "net_price",
    "fieldtype": "Float",
    "label": "Net Price",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -72,7 +73,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-13 21:36:34.943830",
+ "modified": "2023-03-17 20:31:22.307083",
  "modified_by": "Administrator",
  "module": "Daily Sales",
  "name": "Sales",
